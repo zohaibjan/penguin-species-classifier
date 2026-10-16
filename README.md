@@ -1,25 +1,38 @@
-# 📦 Streamlit App Starter Kit 
+# Penguin Species Classifier
+
+An interactive machine learning demo built with Streamlit and scikit-learn. Adjust a penguin's measurements and categorical features to explore a random forest prediction and class probabilities.
+
+**Project type:** learning demo.
+
+## What it demonstrates
+
+- Loading and exploring a CSV dataset with pandas.
+- Encoding categorical inputs consistently with the training data.
+- Training a random forest classifier.
+- Presenting predictions and probabilities in a small interactive interface.
+
+## Run locally
+
+From this repository's root, create a Python environment and run:
+
+```bash
+python -m pip install -r requirements.txt
+streamlit run streamlit_app.py
 ```
-⬆️ (Replace above with your app's name)
-```
 
-Description of the app ...
+The bundled dataset is `data/penguins_cleaned.csv`.
 
-## Demo App
+## Files
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+| Path | Purpose |
+|---|---|
+| `streamlit_app.py` | Data exploration, input controls, model training and predictions |
+| `data/` | Penguin dataset |
+| `requirements.txt` | Python dependencies |
+| `environment.yml` | Environment configuration |
 
-## GitHub Codespaces
+## Scope
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+The model is fitted during the app run. The app does not implement a held-out evaluation, calibrated confidence estimates, a persisted model or a production inference service. Prediction probabilities should be interpreted as model outputs, not validated accuracy.
 
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+Part of [Zohaib Jan's portfolio](https://github.com/zohaibjan).
